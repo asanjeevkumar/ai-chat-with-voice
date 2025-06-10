@@ -9,12 +9,14 @@ sys.path.insert(0, project_root)
 
 from main import app
 
+
 @pytest.fixture
 def client():
     """Create a test client for the FastAPI application."""
     return TestClient(app)
 
+
 @pytest.fixture
 def mock_openai_api_key(monkeypatch):
     """Mock OpenAI API key for testing."""
-    monkeypatch.setenv("OPENAI_API_KEY", "test-api-key") 
+    monkeypatch.setenv("OPENAI_API_KEY", "test-api-key")
