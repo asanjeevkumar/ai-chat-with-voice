@@ -6,6 +6,7 @@ websockets==12.0
 python-multipart==0.0.9
 pydantic-settings==2.2.1
 httpx==0.24.1
+black
 
 # Testing
 pytest==8.0.2
